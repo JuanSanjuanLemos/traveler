@@ -7,3 +7,19 @@
         width: 17.4rem;
     }
 }
+//Main-section
+@include m.xl{
+    .main-section .wrapper-welcome{
+        width: 32rem;
+        h1{
+            font-size: 8rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .button-all{
+            font-size: 1.8rem;
+            height: 7.2rem;
+        }
+    }
+}
