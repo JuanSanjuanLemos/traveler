@@ -36,11 +36,11 @@
         } 
     }
     .wrapper-lists{
-        @include m.center;
+        display: flex;
         flex-direction: column;
         gap: 3rem;
         .list{
-            @include m.center;
+            display: flex;
             flex-direction: column;
             gap: 3rem;
         }
