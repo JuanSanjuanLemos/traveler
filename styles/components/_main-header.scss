@@ -1,0 +1,21 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.main-header{
+    @include m.container;
+    @include m.space-between;
+    margin-top: 2.5rem;
+    gap: 3rem;
+    img{
+        width: 10rem;
+    }
+    .access-button{
+        width: 13rem;
+        height: 4.2rem;
+        border-radius: 1rem;
+        background-color:#DDE9F0;
+        color: c.$text-color-high;
+        font-size: 1.4rem;
+        font-weight:600;
+        border: none;
+    }
+}

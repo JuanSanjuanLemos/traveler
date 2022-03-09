@@ -1,0 +1,9 @@
+@use './settings/colors' as c;
+@use './settings/mixins' as m;
+//Header
+@include m.sm{
+    .main-header .access-button{
+        font-size: 1.6rem;
+        width: 17.4rem;
+    }
+}
