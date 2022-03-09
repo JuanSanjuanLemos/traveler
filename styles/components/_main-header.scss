@@ -17,5 +17,9 @@
         font-size: 1.4rem;
         font-weight:600;
         border: none;
+        &:hover{
+            cursor: pointer;
+            background-color: darken($color: #DDE9F0, $amount: 10%);
+        }
     }
 }

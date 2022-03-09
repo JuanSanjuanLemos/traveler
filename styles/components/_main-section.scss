@@ -33,6 +33,10 @@
             font-size: 1.6rem;
             color: #fff;
             font-weight: 600;
+            &:hover{
+                cursor: pointer;
+                background-color: lighten($color: c.$secondary-color, $amount: 10%);
+            }
         } 
     }
     .wrapper-lists{
