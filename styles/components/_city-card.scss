@@ -1,0 +1,34 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.city-card{
+    position: relative;
+    width: 25rem;
+    border-radius: 2rem;
+    margin-top: 3rem;//gambiarra
+    margin-bottom: 3rem;//gambiarra
+    background-image: url('../../img/Florianópolis.png');
+    background-position: center top -5rem;
+    background-repeat: no-repeat;
+    height: 26rem;
+    div{
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        bottom: 0;
+        border: 1px solid #DCE2E6;
+        padding: 2rem 2rem;
+        border-radius: 0px 0px 20px 20px;
+        h2{
+            color: c.$primary-color;
+            font-family: 'Barlow';
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.7rem;
+        }
+        h3{
+            color: c.$text-color-mid;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
