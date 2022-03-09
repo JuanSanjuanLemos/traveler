@@ -2,9 +2,14 @@
 @use './settings/mixins' as m;
 //Header
 @include m.sm{
-    .main-header .access-button{
-        font-size: 1.6rem;
-        width: 17.4rem;
+    .main-header{
+        .access-button{
+            font-size: 1.6rem;
+            width: 17.4rem;
+        }
+        img{
+            width: 15.6rem;
+        }
     }
 }
 //Main-section
@@ -28,7 +33,7 @@
     .city-card{
         width: 30rem;
         height: 31rem;
-        background-position: center top 10%;
+        background-position: center top;
         div{
             padding: 2.5rem 2rem;
             h2{
@@ -36,6 +41,26 @@
             }
             h3{
                 font-size: 1.5rem;
+            }
+        }
+    }
+}
+//Main-section
+@include m.md{
+    .main-section{
+        .wrapper-lists{
+            flex-direction: row;
+        }
+    }
+}
+@include m.lg{
+    .main-section{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1.6rem;
+        .wrapper-lists{
+            #list2{
+                margin-top: 8rem;
             }
         }
     }

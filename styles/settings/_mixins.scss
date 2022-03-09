@@ -1,14 +1,29 @@
 @mixin container {
     max-width: 1120px;
-    margin: 0 10%;
+    margin: 0 8%;
 }
 @mixin space-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @mixin sm {
     @media (min-width:576px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width:992px) {
         @content;
     }
 }

@@ -2,7 +2,11 @@
 @use '../settings/mixins' as m;
 .main-section{
     @include m.container;
+    @include m.center;
+    flex-direction: column;
+    gap:4rem;
     margin-top: 5rem;
+    margin-bottom: 5rem;
     .wrapper-welcome{
         display: flex;
         flex-direction: column;
@@ -30,5 +34,15 @@
             color: #fff;
             font-weight: 600;
         } 
+    }
+    .wrapper-lists{
+        @include m.center;
+        flex-direction: column;
+        gap: 3rem;
+        .list{
+            @include m.center;
+            flex-direction: column;
+            gap: 3rem;
+        }
     }
 }
