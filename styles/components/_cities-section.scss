@@ -4,6 +4,7 @@
     @include m.container;
     margin-top: 4rem;
     margin-bottom: 5rem;
+    position: relative;
     .wrapper-bar{
         @include m.space-between;
         flex-direction: column;
