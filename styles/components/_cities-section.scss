@@ -1,0 +1,42 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.cities-section{
+    @include m.container;
+    margin-top: 4rem;
+    .wrapper-bar{
+        @include m.space-between;
+        h1{
+            font-family: "Barlow";
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: c.$primary-color;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            li{
+                font-size: 1.6rem;               
+                a{
+                    text-decoration: none;
+                    color: #A0ACB3;
+                    &.active{
+                        color: c.$primary-color;
+                        font-weight: 700;
+                    }
+                }
+                select{
+                    color: #A0ACB3;
+                    appearance: none;
+                    background-image: url('../../img/Down.png');
+                    background-repeat: no-repeat;
+                    background-position: 95%;
+                    width: 5rem;
+                    border: none;
+                    background-color: c.$light-color;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
