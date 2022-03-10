@@ -1,0 +1,21 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.box-search{
+    @include m.space-between;
+    border: 1px solid #DCE2E6;
+    padding: 1.4rem 1rem;
+    border-radius: 1rem;
+    background-color: c.$light-color;
+    input{
+        border: none;
+        width: 10rem;
+        background-color: c.$light-color;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 1.6rem;
+        &::placeholder{
+            color: #A0ACB3;
+            font-size: 1.6rem;
+        }
+    }
+}

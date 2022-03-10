@@ -1,5 +1,6 @@
 @use './settings/colors' as c;
 @use './settings/mixins' as m;
+
 //Header
 @include m.sm{
     .main-header{
@@ -7,11 +8,33 @@
             font-size: 1.6rem;
             width: 17.4rem;
         }
-        img{
+        .main-logo{
             width: 15.6rem;
         }
     }
 }
+
+    //Listing
+    @include m.sm{
+        .main-header{
+            &.-listing{
+                .access-button{
+                    display: block;
+                }
+            }
+        }
+    }
+    @include m.lg{
+        .main-header{
+            .box-search{
+                padding: 1.4rem 1.6rem;
+            }
+            .input-search{
+                width: 38rem;
+            }
+        }
+    }
+
 //Main-section
 @include m.md{
     .main-section{
