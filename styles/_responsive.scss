@@ -97,15 +97,7 @@
 @include m.md{
     .cities-section{
         .wrapper-bar{
-            ul{
-                flex-direction: row;
-                padding-bottom: 1rem;
-                border-bottom: 1px solid #DCE2E6;
-                .active{
-                    padding-bottom: 0.5rem;
-                    border-bottom: 3px solid c.$secondary-color;
-                }
-            }
+            flex-direction: row;
         }
     }
 }
