@@ -10,3 +10,4 @@ for(let i = 0; i<4;i++){
         list2.appendChild(allList[i])
     }
 }
+
