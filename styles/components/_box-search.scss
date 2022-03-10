@@ -2,6 +2,7 @@
 @use '../settings/mixins' as m;
 .box-search{
     @include m.space-between;
+    gap: 1.6rem;
     border: 1px solid #DCE2E6;
     padding: 1.4rem 1rem;
     border-radius: 1rem;

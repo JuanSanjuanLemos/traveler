@@ -16,26 +16,23 @@
 
     //Listing
     @include m.sm{
-        .main-header{
-            &.-listing{
+        .main-header.-listing .container{
                 .access-button{
                     display: block;
                 }
             }
         }
-    }
+
     @include m.lg{
-        .main-header{
-            &.listing{
+        .main-header.-listing .container{
                 .box-search{
                     padding: 1.4rem 1.6rem;
-                }
+                    }
                 .input-search{
                     width: 38rem;
                 }
             }
         }
-    }
 
 //Main-section
 @include m.md{
