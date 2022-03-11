@@ -95,7 +95,6 @@
 }
 
 //Cities-section
-
 @include m.md{
     .cities-section{
         .wrapper-bar{
@@ -103,9 +102,15 @@
         }
     }
 }
-
 @include m.xl{
     .cities-section .cities-list{
         justify-content: space-between;        
+    }
+}
+
+//City-about
+@include m.xl{
+    .city-about{
+        flex-direction: row;
     }
 }

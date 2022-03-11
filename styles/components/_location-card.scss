@@ -1,0 +1,27 @@
+@use '../settings/colors' as c;
+.location-card{
+    height: 26.8rem;
+    width: 16rem;
+    background-color: #fff;
+    border: 1px solid #DCE2E6;
+    border-radius: 20px;
+    margin: auto;
+    img{
+        padding: 3.2rem;
+    }
+    div{
+        border-top: 1px solid #DCE2E6;
+        padding: 3.2rem;
+        h1{
+            font-size: 4rem;
+            font-weight: 600;
+            font-family: 'Barlow';
+            color: c.$primary-color;
+            margin-bottom: 1.6rem;
+        }
+        h2{
+            font-size: 1.6rem;
+            color: c.$tertiary-color;
+        }
+    }
+}

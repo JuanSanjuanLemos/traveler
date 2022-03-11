@@ -2,6 +2,9 @@
 @use '../settings/mixins' as m;
 .city-about{
     @include m.container;
+    @include m.space-between;
+    flex-direction: column;
+    gap: 4rem;
     margin-top: 8rem;
     .wrapper-description{
         max-width: 50.6rem;
@@ -22,5 +25,11 @@
             color: c.$tertiary-color;
             line-height: 1.5;
         }
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.6rem;
     }
 }
