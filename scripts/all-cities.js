@@ -10,17 +10,15 @@ allList.forEach(city => {
 const inputCity = document.querySelector('.input-search');
 document.addEventListener('keypress', function(event){
     if(event.key ==='Enter'){
-        notFound.style.display = 'none';
-        let valueSearch = getValue();
-        let result = checkValue(valueSearch);
-        if(result === true){
-            addWhite();
-        }else{
-            notFound.style.display = 'flex';
-        };
+        resultsearch();
     }
 })
-console.log(citiesList.firstChild)
+
+const imgSearch = document.querySelector('.img-search');
+imgSearch.addEventListener('click',function(){
+    resultsearch();
+})
+
 function getValue(){
     let value = inputCity.value;
     inputCity.value ='';
@@ -63,4 +61,14 @@ function removeWhite(){
 }
 function getCityName(city){
     return city.children[0].children[0].innerText;
+}
+function resultsearch(){
+    notFound.style.display = 'none';
+    let valueSearch = getValue();
+    let result = checkValue(valueSearch);
+    if(result === true){
+        addWhite();
+    }else{
+        notFound.style.display = 'flex';
+    };
 }

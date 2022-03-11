@@ -1,4 +1,3 @@
-//pegar só o valor do titulo do card
-//tratar o titulo
-//tratar o valor de entrada
-//comparar valor com titulo
+//ativar event listener com click na lupa
+//criar página da cidade
+//criar avaliações
