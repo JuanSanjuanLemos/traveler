@@ -21,7 +21,7 @@
                     display: block;
                 }
             }
-        }
+    }
 
     @include m.lg{
         .main-header.-listing .container{
@@ -32,7 +32,13 @@
                     width: 38rem;
                 }
             }
+    }
+    //City
+    @include m.md{
+        .main-header.-city .container .access-button{
+            display: block;
         }
+    }
 
 //Main-section
 @include m.md{

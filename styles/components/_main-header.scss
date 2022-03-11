@@ -5,6 +5,7 @@
         @include m.container;
         @include m.space-between;
         padding-top: 2.5rem;
+        padding-bottom: 2.4rem;
         .main-logo{
             width: 10rem;
         }
@@ -26,9 +27,29 @@
     &.-listing{
         background-color: #fff;
         border-bottom: 1px solid #DCE2E6;
-        padding-bottom: 2.4rem;
         .access-button{
             display: none;
+        }
+    }
+    &.-city{
+        background-color: #fff;
+        .container{
+            .back{
+               @include m.center;
+               width: 4rem;
+               height: 4rem;
+               border: 1px solid #DCE2E6;
+               border-radius: 1rem;
+           }
+           h2{
+               color: c.$text-color-mid;
+               font-size: 2rem;
+               font-weight: 500;
+               font-family: 'Barlow';
+           }
+           .access-button{
+            display: none;
+        }
         }
     }
 }
