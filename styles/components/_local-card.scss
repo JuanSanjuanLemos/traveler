@@ -2,11 +2,12 @@
 @use '../settings/mixins' as m;
 .local-card{
     position: relative;
-    width: 25rem;
+    width: 25.6rem;
     border-radius: 2rem;
     background-image: url('../../img/Doce-&-Compainha.png');
     background-repeat: no-repeat;
     height: 30.3rem;
+    margin: auto;
     .box-rating{
         @include m.center;
         position: relative;

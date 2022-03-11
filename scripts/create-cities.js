@@ -27,11 +27,6 @@ function createComponent(city){
     return cityHMTL;
 }
 
-function createId(){
-    idCount++
-    return idCount;
-}
-
 let florianopolis = CreateCard('./img/florianópolis.png','Florianópolis',98,'city');
 allList.push(createComponent(florianopolis));
 
