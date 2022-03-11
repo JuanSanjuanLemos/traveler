@@ -56,26 +56,22 @@
         margin-top: 1.6rem;
         .wrapper-welcome{
             margin-top: 12rem;
+            width: 32rem;
+            a .button-all{
+                font-size: 1.8rem;
+                height: 7.2rem;
+            }
+            h1{
+                font-size: 7rem;
+            }
+            p{
+                font-size: 2rem;
+            }
         }
         .wrapper-lists{
             #list2{
                 margin-top: 8rem;
             }
-        }
-    }
-}
-@include m.xl{
-    .main-section .wrapper-welcome{
-        width: 30rem;
-        h1{
-            font-size: 7rem;
-        }
-        p{
-            font-size: 2rem;
-        }
-        .button-all{
-            font-size: 1.8rem;
-            height: 7.2rem;
         }
     }
 }
