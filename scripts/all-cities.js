@@ -2,10 +2,16 @@ import allList from "./create-cities.js";
 
 let citiesList = document.querySelector('.cities-list');
 let notFound = document.querySelector('.not-found');
-let citiesSection = document.querySelector('.cities-section');
 allList.forEach(city => {
     citiesList.appendChild(city);
 });
+
+const city1 = document.getElementById('city');
+
+city1.addEventListener('click',function(event){
+    console.log(event);
+    window.location.href=`/${city1.id}.html`;
+})
 
 const inputCity = document.querySelector('.input-search');
 document.addEventListener('keypress', function(event){

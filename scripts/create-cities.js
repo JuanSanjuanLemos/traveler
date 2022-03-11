@@ -1,9 +1,11 @@
 let allList = [];
-function CreateCard(url, cidade,locais){
+let idCount=0;
+function CreateCard(url, cidade,locais,page){
     return{
         url,
         cidade,
-        locais
+        locais,
+        page
     };
 }
 
@@ -18,13 +20,19 @@ function cardHTML(city){
 
 function createComponent(city){
     let cityHMTL = document.createElement('article');
+    cityHMTL.setAttribute('id',city.page);
     cityHMTL.classList.add('city-card');
     cityHMTL.style.backgroundImage = `url(${city.url})`;
     cityHMTL.innerHTML = cardHTML(city);
     return cityHMTL;
 }
 
-let florianopolis = CreateCard('./img/florianópolis.png','Florianópolis', 98);
+function createId(){
+    idCount++
+    return idCount;
+}
+
+let florianopolis = CreateCard('./img/florianópolis.png','Florianópolis',98,'city');
 allList.push(createComponent(florianopolis));
 
 let bombinhas = CreateCard('./img/bombinhas.png','Bombinhas', 43);
