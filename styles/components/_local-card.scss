@@ -1,0 +1,55 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.local-card{
+    position: relative;
+    width: 25rem;
+    border-radius: 2rem;
+    background-image: url('../../img/Doce-&-Compainha.png');
+    background-repeat: no-repeat;
+    height: 30.3rem;
+    .box-rating{
+        @include m.center;
+        position: relative;
+        left: 2.4rem;
+        top: -1.6rem;
+        flex-direction: column;
+        background-color: c.$secondary-color;
+        width: 5.6rem;
+        height: 8.3rem;
+        border-radius: 1rem;
+        h2{
+            font-size: 2rem;
+            font-family: 'Barlow';
+            line-height: 2.5rem;
+            color: c.$light-color;
+            margin-top: 0.5rem;
+        }
+    }
+    .wrapper-name{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        border: 1px solid #DCE2E6;
+        border-radius: 0px 0px 20px 20px;
+        h2{
+            font-family: 'Barlow';
+            font-weight: 600;
+            font-size: 2rem;
+            color: c.$primary-color;
+            padding: 2.4rem;
+        }
+        .wrapper-type{
+            border-top: 1px solid #DCE2E6;
+            @include m.space-between;
+            padding: 2.4rem;
+            h3{
+                font-size: 1.6rem;
+                font-family: 'Barlow';
+                color: c.$tertiary-color;
+            }
+            .type-img{
+                width: 2.4rem;
+            }
+        }
+    }
+}
