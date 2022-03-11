@@ -1,0 +1,26 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.city-about{
+    @include m.container;
+    margin-top: 8rem;
+    .wrapper-description{
+        max-width: 50.6rem;
+        .city-name{
+            font-size: 4.5rem;
+            color: c.$primary-color;
+            font-weight: 600;
+            margin-bottom: 4rem;
+        }
+        .city-description{
+            font-size: 2rem;
+            color: c.$primary-color;
+            margin-bottom: 3.2rem;
+            line-height: 1.5;
+        }
+        .city-attractive{
+            font-size: 1.6rem;
+            color: c.$tertiary-color;
+            line-height: 1.5;
+        }
+    }
+}
