@@ -114,3 +114,14 @@
         flex-direction: row;
     }
 }
+
+//Contrast-section
+@include m.xl{
+    .contrast-section{
+        flex-direction: row;
+        .contrast-img{
+            width:100%;
+            border-radius: 0 1.6rem 1.6rem 0;
+        }
+    }
+}

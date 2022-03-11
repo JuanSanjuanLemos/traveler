@@ -3,14 +3,6 @@
 .top-valued{
     @include m.container;
     margin-top: 12rem;
-    h1{
-        color: c.$primary-color;
-        font-family: 'Berlow';
-        font-size: 3.6rem;
-        font-weight: 600;
-        line-height: 5.6rem;
-        margin-bottom: 3.2rem;
-    }
     .list-local{
         display: flex;
         gap: 3.2rem;

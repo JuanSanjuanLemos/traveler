@@ -1,0 +1,9 @@
+@use '../settings/colors' as c;
+.main-title{
+    color: c.$primary-color;
+    font-family: 'Berlow';
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 5.6rem;
+    margin-bottom: 3.2rem;
+}
