@@ -1,0 +1,17 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.main-select{
+    appearance: none;
+    background-image: url('../../img/Down.png');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-color: c.$light-color;
+    width: 5rem;
+    font-size: 1.6rem;
+    font-family: 'Barlow';
+    border: none;
+    color: #A0ACB3;
+    &:hover{
+        cursor: pointer;
+    }
+}

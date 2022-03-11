@@ -1,0 +1,10 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.meet-all{
+    @include m.container;
+    .list-all{
+        display: flex;
+        gap: 3.2rem;
+        flex-wrap: wrap;
+    }
+}

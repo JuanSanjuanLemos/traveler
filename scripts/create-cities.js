@@ -1,5 +1,4 @@
 let allList = [];
-let idCount=0;
 function CreateCard(url, cidade,locais,page){
     return{
         url,
