@@ -10,25 +10,32 @@
         margin-bottom: 0;
     }
     ul{
+        position: relative;
         display: flex;
         align-items: center;
         gap: 2rem;
         padding-bottom: 1rem;
         border-bottom: 1px solid #DCE2E6;
-        .active{
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid c.$secondary-color;
-        }
         li{
             font-size: 1.6rem;               
             a{
                 text-decoration: none;
                 color: #A0ACB3;
-                &.active{
+            }
+            &.active{
+                a{
                     color: c.$primary-color;
-                    font-weight: 700;
+                    font-weight: 600;
                 }
             }
+        }
+
+        .border{
+            position: absolute;
+            width: 6rem;
+            bottom: 0;
+            border-bottom: 3px solid c.$secondary-color;
+            transition: 200ms ease-in-out;
         }
     }
 }

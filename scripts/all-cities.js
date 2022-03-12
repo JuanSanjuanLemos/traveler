@@ -1,7 +1,14 @@
 import allList from "./create-cities.js";
 
 let citiesList = document.querySelector('.cities-list');
-let notFound = document.querySelector('.not-found');
+let notFound = document.createElement('div');
+notFound.classList.add('not-found')
+notFound.innerHTML = `
+<img src="./img/emoji.png" alt="Emoji desapontado"/>
+<h2>Sem resultados.</h2>
+<h2>Tente uma nova busca</h2>
+`
+
 allList.forEach(city => {
     citiesList.appendChild(city);
 });
@@ -75,6 +82,7 @@ function resultsearch(){
     if(result === true){
         addWhite();
     }else{
+        document.querySelector('.cities-section').appendChild(notFound)
         notFound.style.display = 'flex';
     };
 }

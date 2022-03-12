@@ -2,9 +2,11 @@
 @use '../settings/mixins' as m;
 .meet-all{
     @include m.container;
+    margin-bottom: 4rem;
     .list-all{
         display: flex;
         gap: 3.2rem;
+        row-gap: 5rem;
         flex-wrap: wrap;
     }
 }

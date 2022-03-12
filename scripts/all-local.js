@@ -1,6 +1,6 @@
-//a caralha do elemento tá sendo substituido, está o ocupando o mesmo espaço da memória
-//criar função de criar listas de componente separado por tipo
-//mostrar todas as listas de componentes na tela
+//tirar a gambiarra da borda do box bar
+//criar html pra cada página do local
+//tentar passar isso pro js
 
 const objectFood = [];
 const objectTurism = [];
@@ -12,6 +12,13 @@ const componentEvents= [];
 
 const divLocal = document.querySelector('.list-local');
 const divMeetAll = document.querySelector('.list-all');
+
+const aAll = document.getElementById('all');
+const aTurism = document.getElementById('turism');
+const aFood = document.getElementById('food');
+const aEvents = document.getElementById('events');
+
+const border = document.querySelector('.border');
 
 function CreateLocal(url,name,type,rating,urlType){
     return{
@@ -68,6 +75,27 @@ function createListObjects(local){
              break
     }
 }
+function writeTopValued(){
+    componentAll.forEach(local => {
+        let localClone = local.cloneNode(true);
+        divLocal.appendChild(localClone)
+    });
+}
+function writeMeetAll(array,x){
+    divMeetAll.innerHTML='';
+    for(let i =0; i<x;i++){
+        array.forEach(local => {
+            let localClone = local.cloneNode(true);
+            divMeetAll.appendChild(localClone)
+        });
+    }
+}
+
+function removeDecoration(items){
+    items.forEach(item => {
+        item.classList.remove('active');
+    });
+}
 
 const doceECompainha = CreateLocal('./img/doce-&-compainha.png','Doce & Compainha','Comida e Bebida',"4,7","./img/cup-img.png");
 createListObjects(doceECompainha);
@@ -86,12 +114,37 @@ createListObjects(expoTattoFloripa);
 createComponent(expoTattoFloripa);
 
 const componentAll = [...componentFood,...componentTurism,...componentEvents]
-const componentMeetAll = componentTurism;
-componentAll.forEach(local => {
-    divLocal.appendChild(local)
-    console.log(local)
-});
-componentMeetAll.forEach(local => {
-    divMeetAll.appendChild(local)
-    console.log(local)
-});
+writeTopValued();
+
+
+writeMeetAll(componentAll,2);
+
+aAll.addEventListener('click',function(event){
+    writeMeetAll(componentAll,1);
+    border.style.transform = 'translateX(0)';
+    let items = document.querySelectorAll('.item');
+    removeDecoration(items);
+    event.path[1].classList.add('active')
+})
+aTurism.addEventListener('click',function(event){
+    writeMeetAll(componentTurism,1);
+    border.style.transform = 'translateX(150%)';
+    let items = document.querySelectorAll('.item');
+    removeDecoration(items);
+    event.path[1].classList.add('active')
+})
+aFood.addEventListener('click',function(){
+    writeMeetAll(componentFood,1);
+    border.style.transform = 'translateX(400%)';
+    let items = document.querySelectorAll('.item');
+    removeDecoration(items);
+    event.path[1].classList.add('active')
+    
+})
+aEvents.addEventListener('click',function(){
+    writeMeetAll(componentEvents,1);
+    border.style.transform = 'translateX(650%)';
+    let items = document.querySelectorAll('.item');
+    removeDecoration(items);
+    event.path[1].classList.add('active')
+})
