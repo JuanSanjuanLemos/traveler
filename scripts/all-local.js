@@ -18,8 +18,6 @@ const aTurism = document.getElementById('turism');
 const aFood = document.getElementById('food');
 const aEvents = document.getElementById('events');
 
-const border = document.querySelector('.border');
-
 function CreateLocal(url,name,type,rating,urlType){
     return{
         url,
@@ -93,7 +91,7 @@ function writeMeetAll(array,x){
 
 function removeDecoration(items){
     items.forEach(item => {
-        item.classList.remove('active');
+        item.classList.remove('-active');
     });
 }
 
@@ -121,30 +119,26 @@ writeMeetAll(componentAll,2);
 
 aAll.addEventListener('click',function(event){
     writeMeetAll(componentAll,1);
-    border.style.transform = 'translateX(0)';
     let items = document.querySelectorAll('.item');
     removeDecoration(items);
-    event.path[1].classList.add('active')
+    event.path[1].classList.add('-active')
 })
 aTurism.addEventListener('click',function(event){
     writeMeetAll(componentTurism,1);
-    border.style.transform = 'translateX(150%)';
     let items = document.querySelectorAll('.item');
     removeDecoration(items);
-    event.path[1].classList.add('active')
+    event.path[1].classList.add('-active')
 })
 aFood.addEventListener('click',function(){
     writeMeetAll(componentFood,1);
-    border.style.transform = 'translateX(400%)';
     let items = document.querySelectorAll('.item');
     removeDecoration(items);
-    event.path[1].classList.add('active')
+    event.path[1].classList.add('-active')
     
 })
 aEvents.addEventListener('click',function(){
     writeMeetAll(componentEvents,1);
-    border.style.transform = 'translateX(650%)';
     let items = document.querySelectorAll('.item');
     removeDecoration(items);
-    event.path[1].classList.add('active')
+    console.log(event.path[1].classList.add('-active'))
 })

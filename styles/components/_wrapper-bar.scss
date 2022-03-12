@@ -10,32 +10,25 @@
         margin-bottom: 0;
     }
     ul{
-        position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         gap: 2rem;
-        padding-bottom: 1rem;
         border-bottom: 1px solid #DCE2E6;
         li{
-            font-size: 1.6rem;               
+            font-size: 1.6rem;
+            padding-bottom: 1rem;
             a{
                 text-decoration: none;
                 color: #A0ACB3;
             }
-            &.active{
+            &.-active{
                 a{
                     color: c.$primary-color;
                     font-weight: 600;
-                }
+                }            
+                border-bottom: 3px solid c.$secondary-color;
+                padding-bottom: 0.7rem;
             }
-        }
-
-        .border{
-            position: absolute;
-            width: 6rem;
-            bottom: 0;
-            border-bottom: 3px solid c.$secondary-color;
-            transition: 200ms ease-in-out;
         }
     }
 }
