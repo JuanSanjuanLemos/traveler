@@ -1,0 +1,12 @@
+@use '../settings/mixins' as m;
+.icon-type{
+    @include m.center;
+    position: absolute;
+    top: 0.5rem;
+    right: 5%;
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 1.6rem;
+    background-color: #fff;
+    border: 1px solid #DCE2E6;
+}

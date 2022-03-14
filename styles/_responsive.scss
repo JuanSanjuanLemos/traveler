@@ -149,3 +149,17 @@
         display: block;
     }
 }
+@include m.xl{
+    .img-side{
+        width: 50vw;
+    }
+}
+
+//icon-type
+@include m.lg{
+    .icon-type{
+        position: fixed;
+        top: 3rem;
+        right: 15rem;
+    }
+}
