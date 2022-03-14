@@ -16,7 +16,6 @@ allList.forEach(city => {
 const city1 = document.getElementById('city');
 
 city1.addEventListener('click',function(event){
-    console.log(event);
     window.location.href=`/${city1.id}.html`;
 })
 

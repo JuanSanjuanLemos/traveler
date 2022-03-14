@@ -3,6 +3,9 @@
     max-width: 1300px;
     margin: 0 auto;
 }
+@mixin containerLocal {
+    max-width: 46rem;
+}
 @mixin space-between {
     display: flex;
     align-items: center;

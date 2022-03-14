@@ -1,0 +1,16 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+
+.local-section{
+    @include m.container;
+    .container-content{
+        @include m.containerLocal;
+        .main-title{
+            font-size: 3rem;
+        }
+        .local-description{
+            font-size: 2rem;
+            color: c.$tertiary-color;
+        }
+    }
+}
