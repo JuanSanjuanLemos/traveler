@@ -1,6 +1,10 @@
-//tirar a gambiarra da borda do box bar
-//criar html pra cada página do local
-//tentar passar isso pro js
+
+//adicionar links aos cards
+//criar html pra testar layout
+//adicionar atributos que faltam ao objeto
+//vincular a página ao link
+//página carrega com o objeto q foi clickado
+let idCount = 0;
 
 const objectFood = [];
 const objectTurism = [];
@@ -24,7 +28,7 @@ function CreateLocal(url,name,type,rating,urlType){
         name,
         type,
         rating,
-        urlType
+        urlType,
     }
 }
 function createHTML(local){
@@ -43,8 +47,10 @@ function createHTML(local){
     `
 }
 function createComponent(local){
+    idCount++;
     let localHMTL = document.createElement('article');
     localHMTL.classList.add('local-card');
+    localHMTL.classList.add("local"+idCount);
     localHMTL.style.backgroundImage = `url(${local.url})`;
     localHMTL.innerHTML = createHTML(local);
     switch(local.type){
@@ -99,9 +105,9 @@ const doceECompainha = CreateLocal('./img/doce-&-compainha.png','Doce & Compainh
 createListObjects(doceECompainha);
 createComponent(doceECompainha);
 
-const lagoaDaConceicao = CreateLocal('./img/lago-da-conceição.png', 'Lago da Conceição', 'Pontos Turísticos','5,0',"./img/cam-img.png");
-createListObjects(lagoaDaConceicao);
-createComponent(lagoaDaConceicao);
+const lagoDaConceicao = CreateLocal('./img/lago-da-conceição.png', 'Lago da Conceição', 'Pontos Turísticos','5,0',"./img/cam-img.png");
+createListObjects(lagoDaConceicao);
+createComponent(lagoDaConceicao);
 
 const praiaDoCampeche = CreateLocal('./img/praia-do-campeche.png', 'Praia do Campeche', 'Pontos Turísticos','4,9',"./img/cam-img.png");
 createListObjects(praiaDoCampeche);
