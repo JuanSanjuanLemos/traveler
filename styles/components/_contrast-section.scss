@@ -12,6 +12,9 @@
     .box-text{
         max-width: 43.6rem;
         margin: 3.6rem 6rem;
+        a{
+            text-decoration: none
+        }
         .box-contrast{
             @include m.center;
             margin-bottom: 3.6rem;
@@ -37,5 +40,6 @@
     .contrast-img{
         width:100%;
         border-radius: 0 0 1.6rem 1.6rem;
+        cursor: pointer;
     }
 }
