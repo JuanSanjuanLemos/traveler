@@ -39,6 +39,12 @@
             display: block;
         }
     }
+    //Local
+    @include m.lg{
+        .main-header.-local .container{
+            gap: 3rem;
+        }
+    }
 
 //Main-section
 @include m.md{
@@ -76,7 +82,7 @@
     }
 }
 
-//city-card
+//City-card
 @media (min-width:576px) and (max-width:991px), (min-width:1200px){
     .main-section .city-card{
         width: 30rem;
@@ -134,5 +140,12 @@
 @include m.sm{
     .wrapper-contact{
         justify-content: flex-start;
+    }
+}
+
+//.Img-side
+@include m.lg{
+    .img-side{
+        display: block;
     }
 }
