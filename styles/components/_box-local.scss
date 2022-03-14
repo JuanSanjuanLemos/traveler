@@ -1,6 +1,12 @@
+@use '../settings/colors' as c;
 .box-local{
     width: 100%;
     border-top: 1px solid #DCE2E6;
     margin-top: 1.6rem;
     padding-top: 3.2rem;
+    p{
+        font-size: 1.6rem;
+        color: c.$text-color-mid;
+        line-height: 2.6rem;
+    }
 }
