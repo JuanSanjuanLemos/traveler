@@ -1,5 +1,6 @@
 @use './reset';
 @use './components/banner-city';
+@use './components/box-local';
 @use './components/box-search';
 @use './components/cities-section';
 @use './components/city-about';
@@ -15,7 +16,11 @@
 @use './components/main-title';
 @use './components/meet-all';
 @use './components/not-found';
+@use './components/subtitle-local';
+@use './components/timetable-card';
 @use './components/top-valued';
 @use './components/wrapper-bar';
+@use './components/wrapper-contact';
 @use './components/wrapper-logo-and-back';
+@use './components/wrapper-timetable';
 @use './responsive';

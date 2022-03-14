@@ -1,0 +1,18 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.timetable-card{
+    @include m.center;
+    flex-direction: column;
+    width: 10rem;
+    height: 8rem;
+    background-color: #fff;
+    border: 1px solid #DCE2E6;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-family: 'Barlow', 'sans-serif';
+    line-height: 2.6rem;
+    color: c.$primary-color;
+    .operation{
+        font-weight: 700;
+    }
+}

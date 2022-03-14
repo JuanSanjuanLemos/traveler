@@ -1,0 +1,7 @@
+@use '../settings/mixins' as m;
+.wrapper-timetable{
+    @include m.center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0.8rem;
+}
