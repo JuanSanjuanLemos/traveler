@@ -5,11 +5,13 @@
     @include m.container;
     .container-content{
         @include m.containerLocal;
+        margin-top: 6rem;
         .main-title{
             font-size: 3rem;
         }
         .local-description{
             font-size: 2rem;
+            line-height: 3rem;
             color: c.$tertiary-color;
             margin-bottom: 8rem;
         }

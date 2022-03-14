@@ -155,11 +155,18 @@
     }
 }
 
-//icon-type
+//Icon-type
 @include m.lg{
     .icon-type{
         position: fixed;
         top: 3rem;
         right: 15rem;
+    }
+}
+
+//Local-section
+@include m.lg{
+    .local-section .container-content .main-title{
+        font-size: 5.4rem;
     }
 }
