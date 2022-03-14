@@ -124,3 +124,15 @@
         }
     }
 }
+//Wrapper-timetable
+@include m.sm{
+    .wrapper-timetable{
+        justify-content: flex-start;
+    }
+}
+//Wrapper-contact
+@include m.sm{
+    .wrapper-contact{
+        justify-content: flex-start;
+    }
+}
