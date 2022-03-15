@@ -2,7 +2,9 @@
 @use '../settings/mixins' as m;
 .window-all-ratings{
     position: fixed;
-    @include m.center;
+    display: none;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(18, 57, 82, 0.6);
     top: 0;
     left: 0;

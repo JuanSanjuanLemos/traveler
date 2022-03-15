@@ -146,5 +146,4 @@ aEvents.addEventListener('click',function(){
     writeMeetAll(componentEvents,1);
     let items = document.querySelectorAll('.item');
     removeDecoration(items);
-    console.log(event.path[1].classList.add('-active'))
 })
