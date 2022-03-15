@@ -1,0 +1,72 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.window-all-ratings{
+    position: fixed;
+    @include m.center;
+    background-color: rgba(18, 57, 82, 0.6);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    .box-ratings{
+        width: 99%;
+        max-width: 66rem;
+        max-height: 73.6rem;
+        background-color: c.$light-color;
+        border-radius: 2rem;
+        .header-all-ratings{
+            background-color: #fff;
+            border-radius: 20px 20px 0px 0px;
+            @include m.space-between;
+            height: 9.6rem;
+            padding: 3rem 1rem;
+            gap: 1rem;
+            .rating-and-comment{
+                @include m.center;
+                gap: 2rem;
+                h2{
+                    color: c.$secondary-color;
+                    font-family: "Barlow" , sans-serif;
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+                .wrapper-comments{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.6rem;
+                    .amount-comments{
+                        font-family: 'Barlow', sans-serif;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        color: c.$tertiary-color;
+                    }
+                }
+            }
+            .add-and-close{
+                display: flex;
+                align-items: center;
+                gap: 2.4rem;
+              p{
+                  display: none;
+                  color: c.$tertiary-color;
+                  font-size: 1.4rem;
+                  line-height: 2.4rem;
+                  font-weight: 500;
+                  cursor: pointer;
+              }
+              .close{
+                  background-color: #fff;
+                  width: 4rem;
+                  height: 4rem;
+                  border: 1px solid #DCE2E6;
+                  border-radius: 1rem;
+              } 
+            }
+        }
+        .header-all-ratings{
+            padding: 3rem 1rem;
+        }
+    }
+
+}

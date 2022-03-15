@@ -16,9 +16,17 @@
         }
     }
     p{
-        margin-top: 2rem;
+        margin-top: 1.6rem;
         color: c.$tertiary-color;
         font-size: 1.6rem;
         line-height: 2.6rem;
+        border-bottom: 1px solid #DCE2E6;
+        padding-bottom: 2.4rem;
+        margin-bottom: 2.4rem;
+    }
+    &.-last-rating{
+        p{
+            border: none;
+        }
     }
 }
