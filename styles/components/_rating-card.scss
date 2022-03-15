@@ -7,6 +7,7 @@
     align-items: flex-start;
     .name-and-stars{
         @include m.space-between;
+        width: 100%;
         .user-name{
             color: c.$tertiary-color;
             font-family: 'Barlow';
@@ -16,6 +17,7 @@
         }
     }
     p{
+        width: 100%;
         margin-top: 1.6rem;
         color: c.$tertiary-color;
         font-size: 1.6rem;
@@ -26,6 +28,21 @@
     }
     &.-last-rating{
         p{
+            border: none;
+        }
+    }
+    &.-all{
+        margin-top: 2.4rem;
+        .wrapper-stars{
+            border-bottom: 1px solid #DCE2E6;
+            padding-bottom: 2.4rem;
+        }
+        p{
+            border: none;
+            margin: 0.8rem 0;
+            padding: 0;
+        }
+        &.-last-rating .wrapper-stars{
             border: none;
         }
     }
