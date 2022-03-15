@@ -1,0 +1,24 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.rating-card{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    .name-and-stars{
+        @include m.space-between;
+        .user-name{
+            color: c.$tertiary-color;
+            font-family: 'Barlow';
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.6rem;
+        }
+    }
+    p{
+        margin-top: 2rem;
+        color: c.$tertiary-color;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}

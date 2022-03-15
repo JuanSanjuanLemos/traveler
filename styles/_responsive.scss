@@ -170,3 +170,10 @@
         font-size: 5.4rem;
     }
 }
+
+//header-rating
+@include m.sm{
+    .header-rating .wrapper-rating-action{
+        flex-direction: row;
+    }
+}

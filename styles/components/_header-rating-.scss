@@ -1,0 +1,29 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.header-rating{
+    @include m.space-between;
+    margin-top: 8rem;
+    .wrapper-title-avaliation{
+        @include m.center;
+        gap: 1.6rem;
+        .rating-mean{
+            @include m.center;
+            h3{
+                color: c.$secondary-color;
+                font-size: 2rem;
+                font-family: 'Barlow', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+    .wrapper-rating-action{
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        h3{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: c.$text-color-mid;
+        }
+    }
+}
