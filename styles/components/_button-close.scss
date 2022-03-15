@@ -1,0 +1,11 @@
+.button-close{
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #DCE2E6;
+    border-radius: 1rem;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($color: #fff, $amount: 10%);
+    }
+} 

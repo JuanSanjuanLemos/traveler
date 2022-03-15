@@ -200,3 +200,32 @@
         }
     }
 }
+
+//window-new-rating
+@include m.sm{
+    .window-new-rating .box-new-rating{
+        gap: 1.6rem;
+        .header-new-rating{
+            h2{
+                font-size: 2.4rem;
+            }
+        }
+        form{
+            padding: 3rem;
+            gap: 1.6rem;
+            .comment{
+                height: 13.6rem;
+            }
+            .img-and-name{
+                @include m.space-between;
+                width: 100%;
+                .full-name{
+                    width: 44rem;
+                }
+            }
+            .alert-and-submit{
+                margin-top: 2rem;
+            }
+        }
+    }
+}

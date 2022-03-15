@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="wrapper-rating-action">
-                    <h3 class="rating-actions">Adicionar</h3>
+                    <h3 class="rating-actions -new">Adicionar</h3>
                     <h3 class="rating-actions -view">Ver todas</h3>
                 </div>
             </div>
@@ -172,7 +172,7 @@
                     </div>
                     <div class="add-and-close">
                         <p>Adicionar avaliação</p>
-                        <button class="close" onclick="closeWindow()"><img src="../img/Fechar.png" alt="Icone fechar"></button>
+                        <button class="button-close" onclick="closeWindow()"><img src="../img/Fechar.png" alt="Icone fechar"></button>
                     </div>
                 </div>
                 <div class="all-ratings">
@@ -339,6 +339,50 @@
                         </div>
                     </article>
                 </div>
+            </div>
+        </div>
+        <div class="window-new-rating">
+            <div class="box-new-rating">
+                <div class="header-new-rating">
+                    <h2>Adicionar avaliação</h2>
+                    <button class="button-close" onclick="closeWindowNew()"><img src="../img/Fechar.png" alt="Icone fechar"></button>
+                </div>
+                <form action="">
+                    <input type="file" name="file" id="file" accept="image/png, image/jpeg" class="input-img">
+                    <div class="img-and-name">
+                        <label class="submit-file" for="file">Upload da sua foto</label>
+                        <input type="text" id="name" class="full-name" placeholder="Seu nome completo">
+                    </div>
+                    <textarea name="comment" class="comment" id="comment" maxlength="240" placeholder="Escreva aqui..."></textarea>
+                    <div class="box-rating">
+                        <h2>Sua nota de 1 a 5:</h2>
+                        <article class="bar-rating">
+                            <div class="wrapper-star">
+                                <img src="../img/Star-null.png" alt="Estrela sem valor">
+                            </div>
+                            <div class="wrapper-star">
+                                <img src="../img/Star-null.png" alt="Estrela sem valor">
+                            </div>
+                            <div class="wrapper-star">
+                                <img src="../img/Star-null.png" alt="Estrela sem valor">
+                            </div>
+                            <div class="wrapper-star">
+                                <img src="../img/Star-null.png" alt="Estrela sem valor">
+                            </div>
+                            <div class="wrapper-star">
+                                <img src="../img/Star-null.png" alt="Estrela sem valor">
+                            </div>
+                        </article>
+                    </div>
+                    <div class="alert-and-submit">
+                        <div class="box-alert">
+                            <img src="../img/Alert-orange.png" alt="Icone de alerta">
+                            <p>Sua avaliação será analisada
+                                para poder ser publicada.</p>
+                        </div>
+                        <input type="submit" class="button-submit" value="Enviar avaliação">
+                    </div>
+                </form>
             </div>
         </div>
     </main>
