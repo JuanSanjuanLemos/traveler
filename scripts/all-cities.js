@@ -16,7 +16,7 @@ allList.forEach(city => {
 const city1 = document.getElementById('city');
 
 city1.addEventListener('click',function(event){
-    window.location.href=`./${city1.id}.html`;
+    window.location.href=`traveler/${city1.id}.html`;
 })
 
 const inputCity = document.querySelector('.input-search');
