@@ -92,7 +92,7 @@ openWindowNewRating.addEventListener('click',()=>{
     labelPhoto.style.background="linear-gradient(90deg, #DCF5DD 0%, rgba(220, 245, 221, 0) 100%)";
     labelPhoto.style.justifyContent= 'space-between';
     labelPhoto.innerHTML = /*html*/`
-            <h2>Feito</h2>
+            <h2>Feito!</h2>
             <h3>Trocar foto</h3>
     `
     })
