@@ -59,7 +59,7 @@ openWindowNewRating.addEventListener('click',()=>{
     submitBtn.addEventListener('click',()=>{
         windowNewRating.innerHTML = /*html*/`
         <div class='rating-sent'>
-            <img src="../img/emoji-smile.png" alt="Emoji sorridente" />
+            <img src="../img/Emoji-smile.png" alt="Emoji sorridente" />
             <h1 >Avaliação enviada!</h1>
             <p>Agradecemos pelo seu tempo e colaboração.</p>
             <button onclick="closeWindowNew()">Disponha :)</button>

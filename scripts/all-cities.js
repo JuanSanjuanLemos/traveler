@@ -4,7 +4,7 @@ let citiesList = document.querySelector('.cities-list');
 let notFound = document.createElement('div');
 notFound.classList.add('not-found')
 notFound.innerHTML = `
-<img src="./img/emoji.png" alt="Emoji desapontado"/>
+<img src="./img/Emoji.png" alt="Emoji desapontado"/>
 <h2>Sem resultados.</h2>
 <h2>Tente uma nova busca</h2>
 `

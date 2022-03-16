@@ -95,19 +95,19 @@ function removeDecoration(items){
     });
 }
 
-const doceECompainha = CreateLocal('./img/doce-&-compainha.png','Doce & Compainha','Comida e Bebida',"4,7","./img/cup-img.png");
+const doceECompainha = CreateLocal('./img/Doce-&-Compainha.png','Doce & Compainha','Comida e Bebida',"4,7","./img/cup-img.png");
 createListObjects(doceECompainha);
 createComponent(doceECompainha);
 
-const lagoDaConceicao = CreateLocal('./img/lago-da-conceição.png', 'Lago da Conceição', 'Pontos Turísticos','5,0',"./img/cam-img.png");
+const lagoDaConceicao = CreateLocal('./img/Lago-da-Conceição.png', 'Lago da Conceição', 'Pontos Turísticos','5,0',"./img/cam-img.png");
 createListObjects(lagoDaConceicao);
 createComponent(lagoDaConceicao);
 
-const praiaDoCampeche = CreateLocal('./img/praia-do-campeche.png', 'Praia do Campeche', 'Pontos Turísticos','4,9',"./img/cam-img.png");
+const praiaDoCampeche = CreateLocal('./img/Praia-do-Campeche.png', 'Praia do Campeche', 'Pontos Turísticos','4,9',"./img/cam-img.png");
 createListObjects(praiaDoCampeche);
 createComponent(praiaDoCampeche);
 
-const expoTattoFloripa = CreateLocal('./img/expo-tatto-floripa.png', 'Expo Tatto Floripa', 'Eventos Organizados','5,0',"./img/calendar-img.png");
+const expoTattoFloripa = CreateLocal('./img/Expo-tatto-Floripa.png', 'Expo Tatto Floripa', 'Eventos Organizados','5,0',"./img/calendar-img.png");
 createListObjects(expoTattoFloripa);
 createComponent(expoTattoFloripa);
 
