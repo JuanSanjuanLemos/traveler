@@ -6,25 +6,25 @@ window.onload = ()=>{
     const componentPraiaDosIngleses = document.querySelector('.contrast-img');
     componentDoceECompainha.forEach(el => {
         el.addEventListener('click',()=>{
-            window.location.href=`/locals/doceECompainha.html`;
+            window.location.href=`./locals/doceECompainha.html`;
         });
     });
     componentLagoDaConceicao.forEach(el => {
         el.addEventListener('click',()=>{
-            window.location.href=`/locals/lagoDaConceicao.html`;
+            window.location.href=`./locals/lagoDaConceicao.html`;
         });
     });
     componentPraiaDoCampeche.forEach(el => {
         el.addEventListener('click',()=>{
-            window.location.href=`/locals/praiaDoCampeche.html`;
+            window.location.href=`./locals/praiaDoCampeche.html`;
         });
     });
     componentExpoTattoFloripa.forEach(el =>{
         el.addEventListener('click',()=>{
-            window.location.href=`/locals/expoTatto.html`;
+            window.location.href=`./locals/expoTatto.html`;
         });
     });
     componentPraiaDosIngleses.addEventListener('click',()=>{
-        window.location.href=`/locals/praiaDosIngleses.html`;
+        window.location.href=`./locals/praiaDosIngleses.html`;
     })
 }
