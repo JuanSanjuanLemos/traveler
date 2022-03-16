@@ -1,0 +1,32 @@
+@use '../settings/colors' as c;
+@use '../settings/mixins' as m;
+.rating-sent{
+    @include m.center;
+    flex-direction: column;
+    gap: 4rem;
+    h1{
+        color: #fff;
+        font-size: 3.6rem;
+        font-weight: 500;
+    }
+    p{
+        color: c.$text-color-mid;
+        text-align: center;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        width: 22rem;
+    }
+    button{
+        width: 14.6rem;
+        height: 4.8rem;
+        color: #fff;
+        font-size: 1.6rem;
+        border: none;
+        border-radius: 1rem;
+        background-color: c.$secondary-color;
+        cursor: pointer;
+        &:hover{
+            background-color: darken($color: c.$secondary-color, $amount: 20%);
+        }
+    }
+}

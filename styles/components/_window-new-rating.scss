@@ -94,6 +94,13 @@
                             height: 4.8rem;
                             border: 1px solid #DCE2E6;
                             cursor: pointer;
+                            img{
+                                pointer-events: none;
+                            }
+                            &.-active{
+                                background-color: #FEF7F5;
+                                border: 1px solid #F1BEAC;
+                            }
                         }
                         :first-child{
                             border-radius: 10px 0px 0px 10px;
@@ -128,6 +135,10 @@
                         width: 18rem;
                         height: 4rem;
                         box-sizing: border-box;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: darken($color: #51b853, $amount: 20%);
+                        }
                     }
                 }
             }

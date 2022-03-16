@@ -1,9 +1,3 @@
-
-//adicionar links aos cards
-//criar html pra testar layout
-//adicionar atributos que faltam ao objeto
-//vincular a página ao link
-//página carrega com o objeto q foi clickado
 let idCount = 0;
 
 const objectFood = [];
